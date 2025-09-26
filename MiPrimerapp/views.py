@@ -19,3 +19,5 @@ def suma(request):
 
 def saludo(request, nombre):
     return render(request, "MiPrimerapp/saludo.html", {"nombre": nombre.capitalize()})
+
+from .models import Task
