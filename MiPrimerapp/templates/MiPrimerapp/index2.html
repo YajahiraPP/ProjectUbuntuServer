@@ -1,0 +1,11 @@
+{%extends "MiPrimerapp.html"%}
+{% block content %}
+    <h1 class = "mb-4">Tasks Menu</h1>
+    <div class "list-group">
+        <a href="{% url 'index' %}" class="list-group-item list-group-item-action">Pagina Principal</a>
+        <a href="{% url 'task_index' %}" class="list-group-item list-group-item-action">Lista de Tareas</a>
+        <a href="{% url 'tasks_add' %}" class="list-group-item list-group-item-action">Agregar Tarea Manual</a>
+        <a href="{% url 'tasks_admin_list' %}" class="list-group-item list-group-item-action">Lista de Tareas (desde admin/base de datos)</a>
+        <a href="/admin/" class="list-group-item list-group-item-action">Ir a Panel de Administracion</a>
+    </div>
+{% endblock %}
